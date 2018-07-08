@@ -8,6 +8,11 @@ it("handles actions of type SAVE_COMMENT", () => {
   }
 
   const newState = comments([], action)
-
   expect(newState).toEqual(['new comment'])
+})
+
+it('handles actions with unknown type', () => {
+  const newState = comments([], {type: "UNKNOWN_TYPE", payload: "unknown"})
+
+  expect(newState).toEqual([])
 })
