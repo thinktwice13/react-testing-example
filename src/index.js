@@ -6,8 +6,8 @@ import { createStore } from 'redux'
 import App from "./components/App"
 
 ReactDOM.render(
-  <Provider store={createStore(reducers, {})}>
+  <Root>
     <App/>
-  </Provider,
+  </Root>,
   document.querySelector("#root")
 )
