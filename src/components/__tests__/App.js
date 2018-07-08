@@ -24,5 +24,5 @@ it("shows a comment box", () => {
 })
 
 it("Shows a comment list", () => {
-  expect(wrapped.find(CommentList).length) .toEqual(1)
+  expect(wrapped.find(CommentList).length).toEqual(1)
 })
